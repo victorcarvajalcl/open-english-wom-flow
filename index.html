@@ -1,306 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#041137">
-  <title>Open English WOM</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open English WOM</title>
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <main class="mobile" aria-live="polite">
-    <section class="screen screen-home active" id="home-he" data-screen="home-he" aria-labelledby="home-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay"></div>
 
-      <div class="content home-content">
-        <header class="brand-row" aria-label="Open English WOM">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge" aria-label="WOM">WOM</span>
-        </header>
+<main class="mobile">
 
-        <div class="hero-copy">
-          <p class="eyebrow">Open English + WOM</p>
-          <h1 id="home-title">Clases de inglés en vivo desde tu celular</h1>
-          <p class="subtitle">Suscríbete con tu línea WOM y recibe el PIN para confirmar tu acceso.</p>
-        </div>
+<section class="screen active">
 
-        <div class="glass-card offer-card">
-          <div>
-            <span class="card-label">Suscripción mensual</span>
-            <strong>$9.990</strong>
-          </div>
-          <span>IVA incl.</span>
-        </div>
+<img class="bg"
+src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop">
 
-        <button class="cta" type="button" data-go="he-pin">Continuar</button>
+<div class="overlay"></div>
 
-        <p class="legal">
-          Servicio disponible para usuarios WOM. Precio $9.990 IVA incl. renovación automática mensual. Para cancelar envía BAJA al 551 o llama al 800 914 296.
-        </p>
-      </div>
-    </section>
+<div class="content home-content">
 
-    <section class="screen" id="he-pin" data-screen="he-pin" aria-labelledby="he-pin-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-deep"></div>
+<header class="brand-row">
 
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
+<img class="logo"
+src="logo-white.png">
 
-        <div class="flow-card glass-card">
-          <p class="step-label">Paso 2 de 2</p>
-          <h2 id="he-pin-title">Ingresa el PIN que recibiste por SMS</h2>
-          <p class="subtitle">$9.990 por mes con cobro en tu próxima boleta WOM.</p>
+<span class="wom-badge">
+WOM
+</span>
 
-          <form data-form="he-pin" novalidate>
-            <label class="field-label" for="he-pin-code">PIN de verificación</label>
-            <input id="he-pin-code" name="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="0000" aria-describedby="he-pin-help">
-            <p class="field-help" id="he-pin-help">Usa el código recibido por SMS.</p>
-            <button class="cta" type="submit">Enviar</button>
-          </form>
+</header>
 
-          <button class="text-action" type="button" data-go="wifi-phone">Estoy conectado por WiFi</button>
-        </div>
+<div class="hero-copy">
 
-        <p class="legal">
-          Disponible para usuarios WOM. Servicio de suscripción mensual. Valor $9.990 IVA incluido. Para baja envía BAJA al 551.
-        </p>
-      </div>
-    </section>
+<p class="eyebrow">
+Open English + WOM
+</p>
 
-    <section class="screen" id="wifi-phone" data-screen="wifi-phone" aria-labelledby="wifi-phone-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-deep"></div>
+<h1>
+Clases de inglés en vivo desde tu celular
+</h1>
 
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
+<p class="subtitle">
+Suscríbete con tu línea WOM y recibe el PIN para confirmar tu acceso.
+</p>
 
-        <div class="flow-card glass-card">
-          <p class="step-label">Paso 1 de 2</p>
-          <h2 id="wifi-phone-title">Ingresa tu celular para comenzar</h2>
-          <p class="subtitle">Te enviaremos un PIN por SMS a tu número WOM.</p>
+</div>
 
-          <form data-form="wifi-phone" novalidate>
-            <label class="field-label" for="phone-number">Número de celular</label>
-            <div class="phone-field">
-              <span>+56</span>
-              <input id="phone-number" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="11" placeholder="9 1234 5678">
-            </div>
-            <p class="field-help">Ingresa 9 dígitos sin espacios ni código de país. Ej: 912345678.</p>
-            <button class="cta" type="submit">Continuar</button>
-          </form>
-        </div>
+<div class="glass-card offer-card">
 
-        <p class="legal">
-          Servicio disponible para usuarios WOM. Precio $9.990 IVA incl. renovación automática mensual. Para cancelar envía BAJA al 551.
-        </p>
-      </div>
-    </section>
+<div>
 
-    <section class="screen" id="wifi-invalid-number" data-screen="wifi-invalid-number" aria-labelledby="wifi-invalid-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-warning"></div>
+<span class="card-label">
+Suscripción mensual
+</span>
 
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
+<strong>$9.990</strong>
 
-        <div class="flow-card glass-card">
-          <p class="step-label">Paso 1 de 2</p>
-          <h2 id="wifi-invalid-title">Ingresa tu celular para comenzar</h2>
-          <p class="subtitle">Te enviaremos un PIN por SMS a tu número WOM.</p>
+</div>
 
-          <form data-form="wifi-phone" novalidate>
-            <label class="field-label" for="phone-number-invalid">Número de celular</label>
-            <div class="phone-field is-error">
-              <span>+56</span>
-              <input id="phone-number-invalid" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="11" placeholder="9 1234 5678" aria-describedby="phone-error" aria-invalid="true">
-              <strong class="field-icon" aria-hidden="true">!</strong>
-            </div>
-            <p class="field-help error-copy" id="phone-error">El número ingresado es inválido.</p>
-            <button class="cta" type="submit">Continuar</button>
-          </form>
-        </div>
+<span>IVA incl.</span>
 
-        <p class="legal">
-          No se realizará ningún cobro hasta confirmar el PIN enviado por SMS.
-        </p>
-      </div>
-    </section>
+</div>
 
-    <section class="screen" id="wifi-pin" data-screen="wifi-pin" aria-labelledby="wifi-pin-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-deep"></div>
+<a href="wifi-phone.html" class="cta">
+Continuar
+</a>
 
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
+<p class="legal">
+Servicio disponible para usuarios WOM.
+Precio $9.990 IVA incl.
+Renovación automática mensual.
+</p>
 
-        <div class="flow-card glass-card">
-          <p class="step-label">Paso 2 de 2</p>
-          <h2 id="wifi-pin-title">Ingresa el PIN que recibiste por SMS</h2>
-          <p class="subtitle">$9.990 por mes con cobro en tu próxima boleta WOM.</p>
+</div>
 
-          <form data-form="wifi-pin" novalidate>
-            <label class="field-label" for="wifi-pin-code">PIN de confirmación</label>
-            <input id="wifi-pin-code" name="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="0000">
-            <button class="cta" type="submit">Enviar</button>
-          </form>
+</section>
 
-          <button class="text-action" type="button" data-go="wifi-phone">Cambiar número</button>
-        </div>
+</main>
 
-        <p class="legal">
-          Disponible para usuarios WOM. Servicio de suscripción mensual. Valor $9.990 IVA incluido. Para baja envía BAJA al 551.
-        </p>
-      </div>
-    </section>
+<script src="script.js"></script>
 
-    <section class="screen" id="invalid-pin" data-screen="invalid-pin" aria-labelledby="invalid-pin-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-warning"></div>
-
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
-
-        <div class="flow-card glass-card">
-          <p class="step-label">Paso 2 de 2</p>
-          <h2 id="invalid-pin-title">Ingresa el PIN que recibiste por SMS</h2>
-          <p class="subtitle">$9.990 por mes con cobro en tu próxima boleta WOM.</p>
-
-          <form data-form="retry-pin" novalidate>
-            <label class="field-label" for="invalid-pin-code">PIN de confirmación</label>
-            <div class="pin-field is-error">
-              <input id="invalid-pin-code" name="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="0000" aria-describedby="pin-error" aria-invalid="true">
-              <strong class="field-icon" aria-hidden="true">!</strong>
-            </div>
-            <p class="field-help error-copy" id="pin-error">El PIN ingresado es inválido.</p>
-            <button class="cta" type="submit">Enviar</button>
-          </form>
-
-          <button class="text-action" type="button" data-go="wifi-phone">Validar por WiFi</button>
-        </div>
-
-        <p class="legal">
-          Si solicitaste más de un PIN, usa el código más reciente enviado a tu celular WOM.
-        </p>
-      </div>
-    </section>
-
-    <section class="screen" id="already-subscribed" data-screen="already-subscribed" aria-labelledby="already-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-info"></div>
-
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
-
-        <div class="status-card glass-card">
-          <span class="status-icon info" aria-hidden="true">✓</span>
-          <p class="step-label">Suscripción activa</p>
-          <h2 id="already-title">Tu suscripción ya se encuentra activa</h2>
-          <p class="subtitle">Ya eres parte de Open English con WOM.</p>
-          <button class="cta" type="button" data-go="thank-you">Continuar</button>
-        </div>
-
-        <p class="legal">
-          Para administrar o cancelar tu suscripción, envía BAJA al 551 desde tu línea WOM.
-        </p>
-      </div>
-    </section>
-
-    <section class="screen" id="thank-you" data-screen="thank-you" aria-labelledby="thank-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-success"></div>
-
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
-
-        <div class="status-card glass-card">
-          <span class="status-icon success" aria-hidden="true">✓</span>
-          <p class="step-label">Activación completa</p>
-          <h2 id="thank-title">¡Bienvenido!</h2>
-          <p class="subtitle">Tu suscripción a Open English fue activada correctamente.</p>
-          <button class="cta" type="button" data-go="home-he">Continuar</button>
-        </div>
-
-        <p class="legal">
-          Recibirás la confirmación de activación por SMS. Renovación mensual automática según las condiciones aceptadas.
-        </p>
-      </div>
-    </section>
-
-    <section class="screen" id="generic-error" data-screen="generic-error" aria-labelledby="generic-error-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1485217988980-11786ced9454?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-error"></div>
-
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
-
-        <div class="status-card glass-card">
-          <span class="status-icon error" aria-hidden="true">!</span>
-          <p class="step-label">Error</p>
-          <h2 id="generic-error-title">Ha ocurrido un error</h2>
-          <p class="subtitle">Por favor intenta nuevamente.</p>
-          <button class="cta" type="button" data-go="home-he">Reintentar</button>
-        </div>
-
-        <p class="legal">
-          No se ha realizado ningún cobro si la suscripción no fue confirmada exitosamente por PIN.
-        </p>
-      </div>
-    </section>
-
-    <section class="screen" id="billing-error" data-screen="billing-error" aria-labelledby="billing-error-title">
-      <img class="bg" src="https://images.unsplash.com/photo-1485217988980-11786ced9454?q=80&w=1400&auto=format&fit=crop" alt="">
-      <div class="overlay overlay-error"></div>
-
-      <div class="content">
-        <header class="brand-row compact">
-          <img class="logo" src="logo-white.png" alt="Open English">
-          <span class="wom-badge">WOM</span>
-        </header>
-
-        <div class="status-card glass-card">
-          <span class="status-icon error" aria-hidden="true">!</span>
-          <p class="step-label">Suscripción no completada</p>
-          <h2 id="billing-error-title">No hemos logrado cobrar tu suscripción</h2>
-          <p class="subtitle">Puede deberse a falta de saldo o a una falla en el cobro.</p>
-          <button class="cta" type="button" data-go="home-he">Reintentar</button>
-        </div>
-
-        <p class="legal">
-          Intenta nuevamente más tarde. La activación de Open English queda sujeta a la confirmación exitosa del cobro WOM.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
