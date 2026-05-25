@@ -191,7 +191,7 @@ button {
   padding: 0 12px;
   border: 1px solid rgba(255, 255, 255, .35);
   border-radius: 999px;
-  background: rgba(230, 0, 126, .88);
+  background: #330072;
   box-shadow: 0 12px 28px rgba(230, 0, 126, .28);
   color: var(--white);
   font-weight: 800;
