@@ -1,97 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>PIN</title>
-
-<link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valida tu PIN</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <main class="mobile-shell">
+    <section class="screen" aria-labelledby="page-title">
+      <header class="brand-row compact">
+        <img class="brand-logo" src="logowhite.png" alt="Open English">
+        <span class="wom-badge">WOM</span>
+      </header>
 
-<main class="mobile">
+      <section class="screen-content">
+        <article class="glass-card flow-card">
+          <p class="step-label">Paso 2 de 2</p>
+          <h1 id="page-title">Ingresa el PIN</h1>
+          <p class="subtitle">Revisa el SMS enviado a tu celular y escribe el código de confirmación.</p>
 
-<section class="screen">
+          <form class="form-stack" data-next="thank-you.html">
+            <label class="field-label" for="pin">Código PIN</label>
+            <div class="input-group">
+              <input id="pin" name="pin" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="4" placeholder="0000">
+            </div>
+            <p class="field-help">El PIN vence en pocos minutos.</p>
+            <button class="cta" type="submit">Validar PIN</button>
+          </form>
+        </article>
 
-<img
-class="bg"
-src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1400&auto=format&fit=crop">
+        <a class="secondary-link" href="wifi-phone.html">Cambiar número</a>
 
-<div class="overlay"></div>
-
-<div class="content">
-
-<header class="brand-row compact">
-
-<img
-class="logo"
-src="logowhite.png"
-alt="Open English">
-
-<span class="wom-badge">
-WOM
-</span>
-
-</header>
-
-<div class="flow-card glass-card">
-
-<p class="step-label">
-Paso 2 de 2
-</p>
-
-<h2>
-Ingresa el PIN
-</h2>
-
-<p class="subtitle">
-Revisa el SMS enviado a tu celular.
-</p>
-
-<form>
-
-<label class="field-label">
-Código PIN
-</label>
-
-<div class="pin-field">
-
-<input
-type="text"
-placeholder="0000"
-maxlength="4">
-
-</div>
-
-<a
-href="thank-you.html"
-class="cta">
-Validar PIN
-</a>
-
-</form>
-
-</div>
-
-<div class="legal">
-
-El PIN expira en pocos minutos.
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
+        <footer class="legal">
+          Si no recibiste el SMS, revisa que tu número sea correcto e intenta nuevamente.
+        </footer>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
